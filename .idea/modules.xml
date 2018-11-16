@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hr-management-service/hr-management-service.iml" filepath="$PROJECT_DIR$/hr-management-service/hr-management-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leave-management-service/leave-management-service.iml" filepath="$PROJECT_DIR$/leave-management-service/leave-management-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-eventual-consistency.iml" filepath="$PROJECT_DIR$/spring-boot-eventual-consistency.iml" />
     </modules>
   </component>
