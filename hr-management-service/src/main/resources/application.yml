@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: hr-management-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    topic:
+      employee-leave: hr.employee.create
+    consumer:
+      group-id: employees
+      auto-offset-reset: earliest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

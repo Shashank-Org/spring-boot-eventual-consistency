@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: leave-management-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+
+  kafka:
+    bootstrap-servers: http://localhost:9092
+    topic:
+      employee-leave: hr.employee.create
+    consumer:
+      group-id: leaves
+      auto-offset-reset: earliest
+
+server:
+  port: 8086
