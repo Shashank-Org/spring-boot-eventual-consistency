@@ -5,13 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.example.leavemanagementservice")
 @EntityScan(basePackages = "com.example.leavemanagementservice.domain")
-@EnableMongoRepositories(basePackages = "com.example.leavemanagementservice.repository")
-@Import(KafkaConsumerConfig.class)
+//@EnableMongoRepositories(basePackages = "com.example.leavemanagementservice.repository")
+@Import(/*KafkaConsumerConfig.class*/EventuateConfig.class)
 public class LeaveManagementServiceApplication {
 
     public static void main(String[] args) {

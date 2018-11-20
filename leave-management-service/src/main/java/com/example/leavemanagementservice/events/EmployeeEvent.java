@@ -1,12 +1,7 @@
-package com.demo.hrmanagementservice.events;
+package com.example.leavemanagementservice.events;
 
-import com.demo.hrmanagementservice.domain.Employee;
 import io.eventuate.tram.events.common.DomainEvent;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-
-import java.util.UUID;
 
 
 @Data

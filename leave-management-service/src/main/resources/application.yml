@@ -2,9 +2,19 @@ spring:
   application:
     name: leave-management-service
 
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/test
+#  data:
+#    mongodb:
+#      uri: mongodb://localhost:27017/test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eventuate
+    username: root
+    password: rootpassword
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 
   kafka:
     bootstrap-servers: http://localhost:9092
